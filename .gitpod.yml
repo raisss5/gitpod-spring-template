@@ -2,4 +2,5 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - command: mysql -u root -e "CREATE DATABASE applicationdb"
+  - before: bash ./script.sh
+  - init: mysql -u root -e "CREATE DATABASE applicationdb"
