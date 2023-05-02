@@ -1,7 +1,7 @@
 #!/bin/bash
 while true
 do
-    if ! command -v mysql &> /dev/null
+    if ! systemctl is-active --quiet mysqld
     then
         sleep 1
     else
