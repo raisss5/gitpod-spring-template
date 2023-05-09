@@ -1,4 +1,0 @@
-{
-    "build": { "dockerfile": ".gitpod.Dockerfile" },
-    "postStartCommand" : "bash script.sh"
-}
